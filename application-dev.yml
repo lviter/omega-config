@@ -1,0 +1,16 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: example-service
+
+  profiles:
+    active: dev
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/lviter/omega-config.git
+          clone-on-start: true
